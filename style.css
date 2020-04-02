@@ -1,0 +1,148 @@
+body, h1, h2, h3, h4, p, a {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Open Sans', 'Inter', sans-serif;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.welcome {
+  background-color: #000;
+  color: #fff;
+  background-image: url('../img/football_767.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  z-index: 1;
+}
+
+.welcome::after  {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #131537;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+ width: 140px;
+ position: absolute;
+ top: 3%;
+ margin: 0 auto;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+ @media (min-width: 319px) and (max-width: 639px) {
+  .welcome {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .header_container {
+    min-height: 100vh;
+    padding: 200px 20px 70px;
+
+    z-index: 2;
+  }
+
+  .logo {
+   width: 140px;
+  }
+
+  .header_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 90px;
+
+  }
+
+  .title_welcome {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.7em;
+  }
+
+  .first_title {
+    align-self: flex-start;
+  }
+
+  .second_title {
+    width: 80%;
+    align-self: flex-end;
+  }
+
+  .header_buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+   .header_botton {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .button {
+     border-radius: 50px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+     margin-bottom: 10px;
+     background-color: #573fae;
+     border: none;
+     position: relative;
+   }
+
+   .div_svg {
+     margin-right: 5px;
+   }
+
+   .button_apple__svg {
+     width: 22px;
+     height: 22px;
+     fill: #fff;
+   }
+
+   .button_context {
+     text-align: left;
+   }
+
+   .button_p__context {
+     font-size: 8px;
+     color: #fff;
+   }
+
+   .context_bold {
+     font-weight: 700;
+   }
+
+ }
