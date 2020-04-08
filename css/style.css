@@ -54,7 +54,7 @@ body {
 }
 
 .welcome {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: #000;
   background-image: url("../img/football_1920.jpg");
@@ -209,14 +209,18 @@ body {
     margin-bottom: 22%;
   }
 
+  .button {
+    margin-bottom: 15px;
+  }
+
 
   .div_svg {
     margin-right: 5px;
   }
 
   .button_apple__svg {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     fill: #fff;
   }
 
@@ -265,6 +269,10 @@ body {
     margin-right: 10px;
   }
 
+  .title_number {
+    color: #fff;
+  }
+
   .title_after::after {
     content: "";
     display: block;
@@ -293,12 +301,7 @@ body {
   }
 
   .title_after__color::after {
-    content: "";
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10px;
-    border: 2px solid #fff;
+    border: 2px solid #8a79c6;
   }
 
 
