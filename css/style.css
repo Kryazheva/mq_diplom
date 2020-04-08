@@ -25,6 +25,7 @@ body {
   color:inherit;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
 }
 
@@ -93,7 +94,6 @@ body {
 }
 
 .footer {
-  min-height: 100vh;
   width: 100%;
   background-color: #000;
   background-image: url("../img/game_1920.jpg");
@@ -102,7 +102,6 @@ body {
   background-position: center center;
   background-size: cover;
   position: relative;
-
   z-index: 1;
 }
 
@@ -119,8 +118,34 @@ body {
 
 .footer_container {
   position: relative;
+  padding: 0 20px;
   z-index: 3;
 }
+
+.footer_logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.footer_container__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #503ba3;
+  border-radius: 20px;
+}
+
+.footer_svg__logo {
+  display: block;
+  width: 3.7rem;
+  height: 3.7rem;
+
+}
+
 
 @media (min-width: 319px) and (max-width: 639px) {
 
@@ -130,12 +155,12 @@ body {
 
   .logo {
     margin: 0 auto;
+    padding: 20px 0;
   }
 
   .header_container {
     min-height: 100vh;
     padding: 0 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -146,8 +171,7 @@ body {
     flex-direction: column;
     width: 100%;
     padding-bottom: 90px;
-    margin-top: 200px;
-
+    margin-top: 170px;
   }
 
   .title_welcome {
@@ -166,15 +190,13 @@ body {
   }
 
   .buttons {
-    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 22%;
   }
 
-  .header_botton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .div_svg {
     margin-right: 5px;
@@ -287,6 +309,23 @@ body {
 
   .footer {
     background-image: url("../img/game_767.jpg");
+  }
+
+  .footer_title__h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .footer_title__p {
+    font-size: 14px;
+    text-align: center;
+    color: #968bbf;
+  }
+
+  .footer_title__container {
+    margin-bottom: 75px;
   }
 
 }
