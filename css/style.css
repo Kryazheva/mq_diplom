@@ -478,6 +478,15 @@ body {
 
 
   @media (min-width: 961px) and (max-width:1920px), (min-width: 1920px;) {
+
+    .welcome {
+      background-image: url("../img/football_1920.jpg");
+    }
+
+    .footer {
+      background-image: url("../img/game_1920.jpg");
+    }
+
     .header_container, .footer_container {
       min-width: 980px;
       max-width: 1400px;
