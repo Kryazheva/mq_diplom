@@ -502,11 +502,12 @@ body {
 
     .buttons {
       flex-direction: row;
-      margin-bottom: 5%;
+      margin-bottom: 2.5em;
+
     }
 
     .button {
-      width: 25%;
+      width: 20%;
       margin-left: 2.5rem;
       padding-top: 1em;
       padding-bottom: 1em;
@@ -563,4 +564,41 @@ body {
        padding: 1.7rem;
      }
 
+     .footer {
+       padding-top: 5%;
+     }
+
+     .footer_title__h1 {
+       font-size: 80px;
+       margin-bottom: 0.1em;
+     }
+
+     .footer_title__p {
+       font-size: 30px;
+     }
+
+     .footer_container_desktop {
+       max-width: 1200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 5%;
+     }
+
+     .footer_container__logo {
+       width: 140px;
+       height: 140px;
+     }
+
+     .footer_title__container {
+       margin-bottom: 0;
+       margin-left: 2%;
+     }
+
+     .footer_svg__logo {
+       width: 80%;
+       height: 80%;
+     }
 }
